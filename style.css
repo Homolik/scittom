@@ -1,0 +1,286 @@
+/* style.css */
+
+.body {
+    font-family:Tahoma;
+    background-color:#8CAA8C;
+    
+}
+hr {
+    margin: 1rem 0;
+    color:black;
+    background-color: black;
+    border: 0;
+    opacity: 1;
+    width: 50%;
+    height: 1px;
+  }
+
+.pozadie {
+    height: 100vh; 
+    width: 100vw ;
+    background-color:#F8DEC3;
+    position:relative;
+}
+.sluzby{
+    height:50px;
+    padding-top:75px;
+    padding-bottom:75px;
+    text-align:center;
+    font-size:80px;
+    font-family:Tahoma;
+}
+.nadpisy{
+    height:50px;
+    padding-top:25px;
+    padding-bottom:50px;
+    text-align:left;
+    font-size:40px;
+    font-family:Tahoma;
+}
+.fa-brands{
+    width:20px;
+    height:20px;
+    border-radius:5px;
+
+}
+
+.ciara{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color:black;
+}
+.text-lg-start{
+    width:auto;
+    height:150px;
+    position:relative;
+    padding-bottom:5px;
+}
+.ikony{
+    width:auto;
+    height:25px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color:#E5E3E4;
+}
+/* Add this style section to your CSS file */
+.navbar-nav .nav-link {
+    color: #000;  /* Set your base color here */
+    transition: color 0.3s ease-in-out;  /* Smooth color change on hover */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: green;  /* Replace with your preferred hover color */
+  }
+  .nav-link:visited,
+.nav-link:link {
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  border-bottom: 2px solid green;
+}
+.fixed-top{
+    position: relative;
+}
+
+.footer {
+    background-color: #E5E3E4;
+    padding: 20px 0;
+    text-align: center;
+    width:100%;
+}
+.footer .fa {
+    font-size: 20px;
+    margin: 0 10px;
+    color:black;
+}
+.footer .fa:hover {
+    transition: color 0.3s ease-in-out;
+    color: green;
+}
+@media (max-width: 768px) {
+    /*position: static;*/
+}
+
+
+/*obrazky na podstranke sluzby*/
+.rounded-circle{
+    text-align:center;
+
+}
+.circle-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/*obrazky na podstranke o nas*/
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh; /* Set minimum height for viewport coverage */
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.image-description {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .circle-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+.logo{
+    height:auto;
+    text-align:left;
+}
+.text{
+    font-family:Tahoma;
+}
+.container{
+    padding-top:15px;
+    padding-bottom:25px;
+    padding-left:10px;
+    padding-right:10px;
+}
+/*galéria*/
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    /* Add a slight border */
+    border: 1px solid #ddd;
+}
+
+.img-wrapper img {
+    /* Smooth transition on hover */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover img {
+    /* Increase scale on hover */
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+ .image-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+     margin-top: 2rem;
+ }
+.image-item {
+    position: relative;
+}
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.image-item .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    transition: opacity 0.3s ease;
+    transform: scale(1.1);
+    font-family:Tahoma;
+}
+.image-item:hover .text-overlay {
+    opacity: 1;
+}
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.iframe-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 50vw); /* Define min and max width for text */
+    gap: 1rem;
+}
+.iframe-section {
+    padding: 1rem;
+    border-radius:2% 2% 2% 2%;
+}
+.text-section {
+    padding: 1rem;
+    width:100%;
+    border-radius:2% 2% 2% 2%;
+}
+
+
+
+
+
+
+
+/*ikony pre soc. siete*/
+.social-icons {
+    display: flex;
+    justify-content:center;
+    padding-top:-5;
+
+}
+.social-icons a {
+    color: black;
+    font-size: 24px;  /* Increase font size for bigger icons */
+}
+
+
+
+
+
+
+
+
+
+
+
