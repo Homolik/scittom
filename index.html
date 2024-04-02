@@ -12,80 +12,119 @@
     <link rel="icon" type="image/x-icon" href="obrazky/favicon.ico">
   </head>
   <body class="body">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light navi"> 
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img href="index.html" src="obrazky/scittom3.png" alt="logo" width="180" class="d-inline-block align-text-mid">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div style="text-align:center;" class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link navi" href="index.html">DOMOV</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link navi" href="onas.html">O NÁS</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link navi" href="sluzby.html">SLUŽBY</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link navi" href="galeria.html">GALÉRIA</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link navi" href="kontakt.html">KONTAKT</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-  </nav>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="obrazky\banner.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="obrazky\2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="obrazky\3.jpg" class="d-block w-100" alt="...">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navi">
+        <div class="container-fluid">
+            <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="index.html">
+                <img src="obrazky/scittom3.png" alt="logo" width="180" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span >
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="index.html" >DOMOV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="onas.html">O NÁS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="sluzby.html" >SLUŽBY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="galeria.html" >GALÉRIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="kontakt.html" >KONTAKT</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-auto justify-content-center">
+                    <button type="button" class="btn btn-light me-2 custom-hover" data-bs-toggle="modal" data-bs-target="#loginModal">PRIHLÁSENIE</button>
+                    <button type="button" class="btn btn-primary custom-hover" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRÁCIA</button>
+                  </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="registerName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     
 
+<div style="background-color:white; border-radius:2% 2% 2% 2%; margin-top:35px; margin-bottom:35px;" class="container">
+                <h1 style="margin-bottom:35px; font-size:100px;" class="sluzby">SciTToM</h1>
+                <hr style="width:50%; justify-content:center; color:black; border-radius:50px; padding-top:3px;" class="ciara">
+            <div class="container" style="text-align:center">
+            <h2>Tattoo & beauty atelier</h2>
+            </div>
 
-    <h1 style="margin-bottom:35px; font-size:100px;" class="sluzby">SciTToM</h1>
-    <hr style="width:50%; justify-content:center; color:black; border-radius:50px; padding-top:3px;" class="ciara">
-<div class="container" style="text-align:center">
-<h2>Tattoo & beauty atelier</h2>
+
+            
+                <p style="text-align:center;" class="container">Príbeh tohto ateliéru začal skôr ako vznikol jeho názov, tým že služby sa ponúkali oveľa skôr ako dostal svoje logo. Názov SciTToM som nevymyslela ja ale ľudia ktorí vždy počas poskytovania služieb povedali: „Ty tak s citom tetuješ!“ A vďaka tomu som vybrala slovíčko SciTToM ako logo a ako vlastný nazov celého tohto projektu ktorý už zahŕňa viac služieb ako na začiatku. Ale každú jednu službu teraz už ROBÍME ako tím ale stále precízne a SciTToM pre detail.</p>
+            
+
+
+            <div class="d-flex justify-content-center p-4">
+            <a  href="sluzby.html">
+            <button type="button" style="position:relative; float:center; " class="btn btn-dark">SLUŽBY</button>
+            </a>
+            </div>
+
 </div>
-
-
-  
-    <p style="text-align:center;" class="container">Príbeh tohto ateliéru začal skôr ako vznikol jeho názov, tým že služby sa ponúkali oveľa skôr ako dostal svoje logo. Názov SciTToM som nevymyslela ja ale ľudia ktorí vždy počas poskytovania služieb povedali: „Ty tak s citom tetuješ!“ A vďaka tomu som vybrala slovíčko SciTToM ako logo a ako vlastný nazov celého tohto projektu ktorý už zahŕňa viac služieb ako na začiatku. Ale každú jednu službu teraz už ROBÍME ako tím ale stále precízne a SciTToM pre detail.</p>
-  
-
-
-  <div class="d-flex justify-content-center p-4 border-bottom">
-  <a  href="sluzby.html">
-  <button type="button" style="position:relative; float:center; " class="btn btn-dark">SLUŽBY</button>
-  </a>
-  </div>
-
-
 
 
 

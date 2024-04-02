@@ -12,67 +12,127 @@
     <link rel="icon" type="image/x-icon" href="obrazky/favicon.ico">
 </head>
 <body class="body">
-<nav class="navbar fixed-top navbar-expand-lg navbar-light navi">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img href="index.html" src="obrazky/scittom3.png" alt="logo" width="180" class="d-inline-block align-text-mid">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span >
-        </button>
-        <div style="text-align:center;" class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link navi" href="index.html" >DOMOV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navi" href="onas.html">O NÁS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navi" href="sluzby.html" >SLUŽBY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navi" href="galeria.html" >GALÉRIA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navi" href="kontakt.html" >KONTAKT</a>
-                </li>
-            </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navi">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="obrazky/scittom3.png" alt="logo" width="180" class="d-inline-block align-text-mid justify-content-center">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span >
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <div style="text-align:center;" class="justify-content-center">
+                <ul style="margin: 0 auto; padding: 0 auto; zoom:1;" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="index.html" >DOMOV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="onas.html">O NÁS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="sluzby.html" >SLUŽBY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="galeria.html" >GALÉRIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navi" href="kontakt.html" >KONTAKT</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="d-flex ms-auto justify-content-center">
+                    <button type="button" class="btn btn-light me-2 custom-hover" data-bs-toggle="modal" data-bs-target="#loginModal">PRIHLÁSENIE</button>
+                    <button type="button" class="btn btn-primary custom-hover" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRÁCIA</button>
+                  </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
 
-
-
-
-
-<div style="margin-bottom:25px;" class="container">
-    <h2 style="margin-bottom:18px;" class="sluzby">KTO SME?</h2>
-    <hr style="width:50%; justify-content:center; color:black; border-radius:50px; padding-top:3px;" class="ciara">
-</div>
-<p style="text-align:center;" class="container"></p>
-
-<div style="text-align:center">
-    <h2>Zamestnanci prevádzky</h2>
-</div>
-
-<section class="container image-wrapper">
-    <div class="row">
-        <div class="col-md-6 container">
-            <div class="col">  <img src="obrazky\5.jpg" alt="Image 1" class="circle-image">
-                <p class="image-description">Alžbeta</p>
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="registerName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="col-md-6 container">
+
+
+
+<div style="background-color:white; border-radius:3% 3% 3% 3%; margin-top:35px; margin-bottom:35px;" class="container">
+        <div style="margin-bottom:25px;" class="container">
+            <h2 style="margin-bottom:18px;" class="sluzby">KTO SME?</h2>
+            <hr style="width:50%; justify-content:center; color:black; border-radius:50px; padding-top:3px;" class="ciara">
+        </div>
+        <p style="text-align:center;" class="container">Zatiaľ sme len dvojčlenný tím, Ja (Alžbeta) a Viktória. Vike som vďačná za dôveru v môj projekt a za pomoc s ním, ale čoskoro sa budeme rozrastať.</p>
+
+        <div style="text-align:center">
+            <h2>Zamestnanci prevádzky</h2>
+        </div>
+
+        <section class="container image-wrapper">
             <div class="row">
-                <div class="col">  <img src="obrazky\6.jpg"" alt="Image 2" class="circle-image">
-                    <p class="image-description">Viktória</p>
-                </div>
+                <div class="col-md-6 container">
+                    <div class="col">  <img src="obrazky\5.jpg" alt="Image 1" class="circle-image img-fluid">
+                        <p class="image-description">Alžbeta</p>
                     </div>
                 </div>
+
+                <div class="col-md-6 container">
+                    <div class="row">
+                        <div class="col">  <img style="" src="obrazky\6.jpg" alt="Image 2" class="img-fluid circle-image">
+                            <p class="image-description">Viktória</p>
+                        </div>
+                            </div>
+                        </div>
             </div>
-</section>
+        </section>
 
 
 
@@ -85,16 +145,16 @@
 
 
 
-<div class="d-flex justify-content-center p-4 border-bottom">
-    <a  href="sluzby.html">
-        <button type="button" style="position:relative; float:center;  " class="btn btn-dark">SLUŽBY</button>
-    </a>
+        <div class="d-flex justify-content-center p-4">
+            <a  href="sluzby.html">
+                <button type="button" style="position:relative; float:center;  " class="btn btn-dark">SLUŽBY</button>
+            </a>
+        </div>
+
+
+
+
 </div>
-
-
-
-
-
 
 
 <footer class="footer">
