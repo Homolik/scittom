@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E335SBP6QX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -20,16 +20,17 @@
     <title>SciTToM</title>
     <link rel="icon" type="image/x-icon" href="obrazky/favicon.ico">
   </head>
-  <body class="body">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light navi">
+  <body class="body stage">
+    <nav class="navbar shadow p-3 mb-5 bg-body fixed-top navbar-expand-lg navbar-light navi">
         <div class="container-fluid">
-            <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="index.html">
-                <img src="obrazky/scittom3.png" alt="logo" width="180" class="img-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="obrazky/scittom3.png" alt="logo" width="180" class="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span >
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="container justify-content-center d-flex object-fit ">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link navi" href="index.html" >DOMOV</a>
@@ -47,9 +48,10 @@
                         <a class="nav-link navi" href="kontakt.html" >KONTAKT</a>
                     </li>
                 </ul>
+            </div>
                 <div class="d-flex ms-auto justify-content-center">
-                    <button type="button" class="btn btn-light me-2 custom-hover" data-bs-toggle="modal" data-bs-target="#loginModal">PRIHLÁSENIE</button>
-                    <button type="button" class="btn btn-primary custom-hover" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRÁCIA</button>
+                    <button type="button" style="padding-bottom:10px;" class="btn btn-light me-2 custom-hover" data-bs-toggle="modal" data-bs-target="#loginModal">PRIHLÁSENIE</button>
+                    <button type="button" style="padding-bottom:10px;" class="btn btn-primary custom-hover" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRÁCIA</button>
                   </div>
             </div>
         </div>
@@ -73,7 +75,7 @@
                             <label for="loginPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="loginPassword">
                         </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button style="border-radius:32px; margin-bottom:15%; width:135px; height:50px; background-color:#04633F; font-size:18px;" type="submit" class="btn btn-primary">Login</button>
                     </form>
                 </div>
             </div>
@@ -102,7 +104,7 @@
                             <label for="registerPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="registerPassword">
                         </div>
-                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button style="border-radius:32px; margin-bottom:15%; width:135px; height:50px; background-color:#04633F; font-size:18px;" type="submit" class="btn btn-primary">Register</button>
                     </form>
                 </div>
             </div>
@@ -111,22 +113,22 @@
 
 
 
-<div style="background-color:white; border-radius:2% 2% 2% 2%; margin-top:35px; margin-bottom:35px;" class="container">
-            <div style="margin-bottom:25px;" class="container">
-                <h2 style="margin-bottom:18px;" class="sluzby">KONTAKTUJ NÁS</h2>
-                <hr style="width:50%; justify-content:center; color:black; border-radius:50px; padding-top:3px;" class="ciara">
-            </div>
+<div style="background-color:white; border-radius:35px; margin-top:70px; margin-bottom:70px;" class="container">
+            
+                <h2 style="margin-bottom:18px; text-align:center;" class="sluzby">KONTAKTUJ NÁS</h2>
+                <hr class="underline" style="color:black; width:80%; margin-left:11%; margin-bottom:100px;">
+            
 
 
 
 
 
 
-        <div class="container">
-        <p> Vzhľadom na charakter služieb je možné sa objednať iba na objednávku. Objednávať sa môžete cez email alebo telefonicky.
+        <div style="margin-left:15px;" class="container">
+        <p > Vzhľadom na charakter služieb je možné sa objednať iba na objednávku. Objednávať sa môžete cez email alebo telefonicky.
             V prípade otázok nás neváhajte kontaktovať:</p>
         </div>
-            <div class="container">
+            <div style="margin-left:15px;" class="container">
                     <div class="watch-text">
                         <i class="fas fa-clock"></i>  <span>PO-SO: Na objednávku</span>
                     </div>
@@ -143,7 +145,7 @@
                         <i class="fas fa-map-marker-alt"></i>  <span>Jozefa Vuruma 10, 010 01 Žilina (za zástavkou polícia)</span>
                     </div>
             </div>
-            <div class="container">
+            <div style="margin-left:15px;" class="container">
             <p>Počas práce celý čas venujem klientovi a telefóny nedvíham. Keď skončím, neprijaté telefonáty okamžite vybavujem.</p>
             </div>
 
@@ -159,7 +161,7 @@
                 <section class="container">
                 <div class="row">
                     <div class="col-md-6 container">
-                    <h2>Chceš sa nechať potetovať?</h2>
+                    <h2>Chceš využiť jednu z našich služieb?</h2>
                     <p>Kontaktuj nás a povedz nám o svojich predstavách!</p>
                     <form>
                         <div class="mb-3">
@@ -174,7 +176,7 @@
                         <label for="sprava" class="form-label">Správa</label>
                         <textarea class="form-control" id="sprava" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Odoslať</button>
+                        <button style="border-radius:32px; margin-bottom:15%; width:135px; height:50px; background-color:#04633F; font-size:18px;" type="submit" class="btn btn-primary">Odoslať</button>
                     </form>
                     </div>
                     <div class="col-md-6 container">
@@ -182,7 +184,8 @@
                             <h2 class="text">Kde nás nájdete?</h2>
                             <div class="container">
                                 <div class="iframe-section">
-                                    <iframe style="border-radius:3% 3% 3% 3%;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2605.8552562883756!2d18.73606194190471!3d49.22227207316249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDEzJzIwLjIiTiAxOMKwNDQnMTUuMyJF!5e0!3m2!1ssk!2ssk!4v1710494515423!5m2!1ssk!2ssk" frameborder="0" scrolling="auto" width="100%" height="300px"></iframe>
+                                    
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d651.4630685004407!2d18.73758985513181!3d49.222328629333596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47145ea65d8b688b%3A0x4d45b4411d1856a9!2sJozefa%20Vuruma%2010%2C%20010%2001%20%C5%BDilina!5e0!3m2!1ssk!2ssk!4v1712095584021!5m2!1ssk!2ssk" width="100%" height="300px" style="border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                     </div>
                 </div>
@@ -198,13 +201,12 @@
 
 
 
-    <footer class="footer">
-        <p class="text-muted">HM &copy; 2024 Všetky práva vyhradené.</p>
-        <a href="#" class="fa fa-solid fa-envelope"></a>
-        <a href="#" class="fa fa-brands fa-instagram"></a>
-        <a href="#" class="fa fa-brands fa-facebook"></a>
-    </footer>
-
+<footer class="footer">
+    <p class="text-muted">HM - SciTToM &copy; 2024 Všetky práva vyhradené.</p>
+    <a style="text-decoration:none; ;" href="mailto:alzbeta.chmeliarova@icloud.sk" class="fa fa-solid fa-envelope"></a>
+    <a style="text-decoration:none;" href="https://www.instagram.com/scittom/" class="fa fa-brands fa-instagram"></a>
+    <a style="text-decoration:none;" href="https://www.facebook.com/alzbeta.chmeliarova" class="fa fa-brands fa-facebook"></a>
+</footer>
 
 
 

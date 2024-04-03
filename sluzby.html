@@ -20,16 +20,17 @@
     <title>SciTToM</title>
     <link rel="icon" type="image/x-icon" href="obrazky/favicon.ico">
 </head>
-<body class="body">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light navi">
+<body style="height: 200vh;" class="body stage">
+    <nav class="navbar shadow p-3 mb-5 bg-body fixed-top navbar-expand-lg navbar-light navi">
         <div class="container-fluid">
-            <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="index.html">
-                <img src="obrazky/scittom3.png" alt="logo" width="180" class="img-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="obrazky/scittom3.png" alt="logo" width="180" class="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span >
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="container justify-content-center d-flex object-fit ">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link navi" href="index.html" >DOMOV</a>
@@ -47,9 +48,10 @@
                         <a class="nav-link navi" href="kontakt.html" >KONTAKT</a>
                     </li>
                 </ul>
+            </div>
                 <div class="d-flex ms-auto justify-content-center">
-                    <button type="button" class="btn btn-light me-2 custom-hover" data-bs-toggle="modal" data-bs-target="#loginModal">PRIHLÁSENIE</button>
-                    <button type="button" class="btn btn-primary custom-hover" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRÁCIA</button>
+                    <button type="button" style="padding-bottom:10px;" class="btn btn-light me-2 custom-hover" data-bs-toggle="modal" data-bs-target="#loginModal">PRIHLÁSENIE</button>
+                    <button type="button" style="padding-bottom:10px;" class="btn btn-primary custom-hover" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTRÁCIA</button>
                   </div>
             </div>
         </div>
@@ -73,7 +75,7 @@
                             <label for="loginPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="loginPassword">
                         </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button style="border-radius:32px; margin-bottom:15%; width:135px; height:50px; background-color:#04633F; font-size:18px;" type="submit" class="btn btn-primary">Login</button>
                     </form>
                 </div>
             </div>
@@ -102,7 +104,7 @@
                             <label for="registerPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="registerPassword">
                         </div>
-                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button style="border-radius:32px; margin-bottom:15%; width:135px; height:50px; background-color:#04633F; font-size:18px;" type="submit" class="btn btn-primary">Register</button>
                     </form>
                 </div>
             </div>
@@ -110,93 +112,57 @@
     </div>
 
 
-<div style="background-color:white; border-radius:2% 2% 2% 2%; margin-top:35px; margin-bottom:35px;" class="container">
-            <div style="margin-bottom:25px;" class="container">
-                <h2 style="margin-bottom:18px;" class="sluzby">SLUŽBY</h2>
-                <hr style="width:50%; justify-content:center; color:black; border-radius:50px; padding-top:3px;" class="ciara">
+<div style="background-color:white; border-radius:35px; margin-top:70px; margin-bottom:70px;" class="container">
+    <h2 style="margin-bottom:18px; text-align:center;" class="sluzby">SLUŽBY</h2>
+    <hr class="underline" style="color:black; width:80%; margin-left:11%; margin-bottom:20px;">
+            <p style="text-align:center; font-size:18px;" class="container text">Už podľa definíce firmy ktorá vyplýva z názvu: "Tattoo and beauty atelier" vám môže byť jasné, že v našom ateliéri si nájde každý to svoje či kozmetika, tetovanie alebo pripravovaná pedikúra a masáž. Každú jednu službu môžete očakávať v najväčšej kvalite so špičkovým prevedením od vyučených profesionálov vo svojom obore, ktorý vnímajú svoju prácu ako hobby.</p>
+            <div style="text-align:center; " class="container">
+                <a href="#pedikura"><button style="border-radius:32px; margin-bottom:15%; width:135px; height:50px; background-color:#04633F; font-size:18px;" type="button" class="btn btn-light tlacidlo">ZISTIŤ VIAC</button></a>
             </div>
+                
 
 
 
-            <div class="container text">
-                <div class="image-container">
-                    <div class="text-center">
-                        <div class="image-item">
-                            <a>
-                        <img style="border-radius:3% 3% 3% 3%;" src="obrazky\4.jpg" alt="Image 1">
-                            </a>
-                            <div class="text-overlay">
-                                <h3>PEDIKÚRA</h3>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="text-center">
-                            <div class="image-item">
-                                <img style="border-radius:3% 3% 3% 3%;" src="obrazky\kozmetika.jpg" alt="Image 2">
-                                <div class="text-overlay">
-                                    <h3>KOZMETIKA</h3>
-                                </div>
-                            </div>
-                        </div>
-                    <div class="text-center">
-                        <div class="image-item">
-                            <img style="border-radius:3% 3% 3% 3%;" src="obrazky\tetovania.jpg" alt="Image 3">
-                            <div class="text-overlay">
-                                <h3>TETOVANIA</h3>
-                            </div>
-                        </div>
-                    </div>
-                <div class="text-center">
-                        <div class="image-item">
-                            <img style="border-radius:3% 3% 3% 3%;" src="obrazky\masaze.jpg" alt="Image 4">
-                            <div class="text-overlay">
-                                <h3>MASÁŽE</h3>
-                            </div>
-                        </div>
-                </div>
-                </div>
-            </div>
-            <div style="text-align:center;" class="container">
-                <a href="#pedikura"><button type="button" class="btn btn-light">Zistiť viac</button></a>
-            </div>
 
 
-
-            <p style="text-align:center;" class="container text">Už podľa definíce firmy ktorá vyplýva z názvu: "Tattoo and beauty atelier" vám môže byť jasné, že v našom ateliéri si nájde každý to svoje či kozmetika, tetovanie alebo pripravovaná pedikúra a masáž. Každú jednu službu môžete očakávať v najväčšej kvalite so špičkovým prevedením od vyučených profesionálov vo svojom obore, ktorý vnímajú svoju prácu ako <a id="pedikura" >hobby</a>.</p>
-
-
-
-            <div class="container text">
+           <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div style="margin-bottom:30px;" class="container">
-                        <h2 style="font-size:50px;" class="nadpisy">ČO PONÚKAME?</h2>
-                        <hr class="underline" style="color:black; width:70%;">
-                        </div>
-                        <h2 style="color:#6A6A6B;">Pedikúra - pripravujeme</h2>
-                        <hr class="underline" style="color:#6A6A6B; width:57%;">
-                        <p style="color:#6A6A6B;">Doprajte svojim nohám starostlivosť, ktorú si zaslúžia! Naša profesionálna pedikúra zahŕňa strih a úpravu nechtov, pilníkovanie, a leštenie. Ponúkame tiež odstraňovanie kalusov, masáž chodidiel a rôzne kúpeľné procedúry, vďaka ktorým budú vaše nohy svieže a omladené.</p>
-                        <ul style="list-style-type:disc; color:#6A6A6B;">
+                  <div class="col-md-6">
+                    <h2 style="color:#555555;"><a id="pedikura"></a>Pedikúra - pripravujeme</h2>
+                        <hr class="underline" style="color:#555555; width:67%;">
+                        <p style="color:#555555; font-size:18px;">Doprajte svojim nohám starostlivosť, ktorú si zaslúžia! Naša profesionálna pedikúra zahŕňa strih a úpravu nechtov, pilníkovanie, a leštenie. Ponúkame tiež odstraňovanie kalusov, masáž chodidiel a rôzne kúpeľné procedúry, vďaka ktorým budú vaše nohy svieže a omladené.</p>
+                        <ul style="list-style-type:disc; color:#555555; margin-bottom:5%;">
                             <li>Medicínska</li>
                             <li>Mokrá</li>
                             <li>Odstraňovanie kurieho oka</li>
                             <li>Gél lak</li>
                         </ul>
-                        <h2>Tetovania</h2>
-                        <hr class="underline" style="color:black; width:25%;">
-                        <p>Obdarujte sa jedinečným tetovaním od našich talentovaných umelkýň. Ponúkame širokú škálu štýlov a vieme vám vytvoriť dizajn na mieru. Naše štúdio je čisté, sterilné a používa len to najkvalitnejšie vybavenie.</p>
-                        <ul style="list-style-type:disc;">
+                  </div>
+                  <div class="col-md-6">
+                    <img style="border-radius:20px; margin-bottom:3%;" src="obrazky\pedikura.jpg" class="img-fluid" alt="Obrázok pedikúry">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2>Tetovania</h2>
+                        <hr class="underline" style="color:black; width:35%;">
+                        <p style="font-size:18px;">Obdarujte sa jedinečným tetovaním od našich talentovaných umelkýň. Ponúkame širokú škálu štýlov a vieme vám vytvoriť dizajn na mieru. Naše štúdio je čisté, sterilné a používa len to najkvalitnejšie vybavenie.</p>
+                        <ul style="list-style-type:disc; margin-bottom:5%;">
                             <li>Nové tetovanie (vyber si pre seba najvhodnejšieho tatéra)</li>
                             <li>Oprava/obnova starých tetovaní</li>
                             <li>Korekcia - garantovaná do 2 mesiacov od nového tetovania</li>
                         </ul>
-                        
-
-
-                        <h2>Kozmetika</h2>
-                        <hr class="underline" style="color:black; width:25%;">
-                        <p>Zvýraznite svoju prirodzenú krásu pomocou našej vysokokvalitnej kozmetiky. Ponúkame široký výber make-upu a produktov starostlivosti o pleť prírodnej kozmetiky. Náš skúsený personál vám môže pomôcť nájsť perfektné produkty, ktoré budú vyhovovať vašim potrebám. Okrem starostlivosti o pleť sa môžete tešiť aj na WAX.</p>
-                        <ul style="list-style-type:disc;">
+                  </div>
+                  <div class="col-md-6">
+                    <img style="border-radius:20px; margin-bottom:3%;" src="obrazky\tattoo.jpg" class="img-fluid" alt="Obrázok tetovania">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2>Kozmetika</h2>
+                        <hr class="underline" style="color:black; width:35%;">
+                        <p style="font-size:18px;">Zvýraznite svoju prirodzenú krásu pomocou našej vysokokvalitnej kozmetiky. Ponúkame široký výber make-upu a produktov starostlivosti o pleť prírodnej kozmetiky. Náš skúsený personál vám môže pomôcť nájsť perfektné produkty, ktoré budú vyhovovať vašim potrebám. Okrem starostlivosti o pleť sa môžete tešiť aj na WAX.</p>
+                        <ul style="list-style-type:disc; margin-bottom:5%;">
                             <li>Hĺbkové čistenie pleti</li>
                             <li>Úprava + henovanie obočia</li>
                             <li>Maľovanie - make-up na mieru</li>
@@ -210,23 +176,43 @@
                                 <li>Robíme všetky partie</li>
                             </ul>
                         </ul>
-                        <h2 style="color:#6A6A6B;">Masáže - pripravujeme</h2>
-                        <hr class="underline" style="color:#6A6A6B; width:57%;">
-                        <p style="color:#6A6A6B;">Uvoľnite stres a napätie pomocou relaxačnej masáže. Ponúkame rôzne masážne štýly, vrátane švédskej masáže, masáže hlbokých tkanív a športovej masáže. Naši skúsení terapeuti prispôsobia vašu masáž vašim špecifickým potrebám.</p>
-                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <img style="border-radius:20px; margin-bottom:3%;" src="obrazky\kozmetika.jpg" class="img-fluid" alt="Obrázok kozmetiky">
+                  </div>
                 </div>
-            </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2 style="color:#555555;">Masáže - pripravujeme</h2>
+                        <hr class="underline" style="color:#555555; width:64%;">
+                        <p style="color:#555555; font-size:18px;">Uvoľnite stres a napätie pomocou relaxačnej masáže. Ponúkame rôzne masážne štýly, vrátane švédskej masáže, masáže hlbokých tkanív a športovej masáže. Naši skúsení terapeuti prispôsobia vašu masáž vašim špecifickým potrebám.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img style="border-radius:20px;" src="obrazky\masaze.jpg" class="img-fluid" alt="Obrázok masáže">
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
-
-
-
-
 <footer class="footer">
-    <p class="text-muted">HM &copy; 2024 Všetky práva vyhradené.</p>
-    <a href="#" class="fa fa-solid fa-envelope"></a>
-    <a href="#" class="fa fa-brands fa-instagram"></a>
-    <a href="#" class="fa fa-brands fa-facebook"></a>
+    <p class="text-muted">HM - SciTToM &copy; 2024 Všetky práva vyhradené.</p>
+    <a style="text-decoration:none; ;" href="mailto:alzbeta.chmeliarova@icloud.sk" class="fa fa-solid fa-envelope"></a>
+    <a style="text-decoration:none;" href="https://www.instagram.com/scittom/" class="fa fa-brands fa-instagram"></a>
+    <a style="text-decoration:none;" href="https://www.facebook.com/alzbeta.chmeliarova" class="fa fa-brands fa-facebook"></a>
 </footer>
 
 

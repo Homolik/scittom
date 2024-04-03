@@ -1,9 +1,26 @@
 /* style.css */
 
-.body {
+  body {
+	background: linear-gradient(-45deg, #04633F, #02341E, #09441d, #125c3f, #04633F, #02341E);
+	background-size: 400% 400%;
+	animation: gradient 40s ease infinite;
+	height: 115vh;
     font-family:Tahoma;
-    background-color:#8CAA8C;
-    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.h2{
+    font-family:Tahoma;
 }
 hr {
     margin: 1rem 0;
@@ -26,7 +43,7 @@ hr {
     padding-top:75px;
     padding-bottom:75px;
     text-align:center;
-    font-size:80px;
+    font-size:65px;
     font-family:Tahoma;
 }
 .nadpisy{
@@ -92,7 +109,7 @@ hr {
   }
 
   .navbar-nav .nav-link:hover {
-    color: green;  /* Replace with your preferred hover color */
+    color: #04633F;   /* Replace with your preferred hover color */
   }
   .nav-link:visited,
 .nav-link:link {
@@ -101,14 +118,15 @@ hr {
 
 .nav-link:hover,
 .nav-link:active {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #04633F;
+  border-radius:2px;
 }
 .fixed-top{
     position: relative;
 }
 
 .footer {
-    background-color: #E5E3E4;
+    background-color: white;
     padding: 20px 0;
     text-align: center;
     width:100%;
@@ -120,7 +138,7 @@ hr {
 }
 .footer .fa:hover {
     transition: color 0.3s ease-in-out;
-    color: green;
+    color:#02341E;
 }
 @media (max-width: 768px) {
     /*position: static;*/
@@ -166,51 +184,55 @@ hr {
         height: 100px;
     }
 }
+/*prihlasovacie butonny*/
 .custom-hover:hover {
     background-color:transparent;
     transition: color 0.3s ease-in-out;
-    color: green;
-    border-color: green;
+    color: #02341E;
+    border-color: #02341E;
+	
   }
 
   .custom-hover {
-    color: black;
+    color: #02341E;
     font-family: Tahoma, sans-serif;
     background-color:transparent;
-    border-color: transparent;
+    border-color: #02341E;
+	border-width:2px;
+    border-radius:25px;
   }
-/*prihlasovacie butonny*/
+
  .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: green;
-    --bs-btn-border-color: green;
+    --bs-btn-bg: #04633F;
+    --bs-btn-border-color: #04633F;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: green;
-    --bs-btn-hover-border-color: green;
+    --bs-btn-hover-bg: #04633F;
+    --bs-btn-hover-border-color: #04633F;
     --bs-btn-focus-shadow-rgb: 49, 132, 253;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: green;
-    --bs-btn-active-border-color: green;
+    --bs-btn-active-bg:#04633F;
+    --bs-btn-active-border-color: #04633F;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: green;
-    --bs-btn-disabled-border-color: green;
+    --bs-btn-disabled-bg: #04633F;
+    --bs-btn-disabled-border-color: #04633F;
 }
 .btn-light {
     --bs-btn-color: #ffffff;
-    --bs-btn-bg: green;
-    --bs-btn-border-color: green;
+    --bs-btn-bg: #02341E;
+    --bs-btn-border-color: #02341E;
     --bs-btn-hover-color: #ffffff;
-    --bs-btn-hover-bg: green;
-    --bs-btn-hover-border-color: green;
+    --bs-btn-hover-bg: #04633F;
+    --bs-btn-hover-border-color: #04633F;
     --bs-btn-focus-shadow-rgb: 211, 212, 213;
     --bs-btn-active-color: #ffffff;
-    --bs-btn-active-bg: green;
-    --bs-btn-active-border-color: green;
+    --bs-btn-active-bg:#04633F;
+    --bs-btn-active-border-color: #04633F;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #ffffff;
-    --bs-btn-disabled-bg: green;
-    --bs-btn-disabled-border-color: green;
+    --bs-btn-disabled-bg: #04633F;
+    --bs-btn-disabled-border-color: #04633F;
 }
 .logo{
     height:auto;
@@ -329,9 +351,6 @@ hr {
     color: black;
     font-size: 24px;  /* Increase font size for bigger icons */
 }
-
-
-
 
 
 
