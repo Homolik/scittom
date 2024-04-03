@@ -90,7 +90,7 @@ hr {
     right: 0;
     z-index: 100;
     background-color:#E5E3E4;
-    width:100%;
+    width:max;
 }
 .show-on-hover {
     opacity: 0;
