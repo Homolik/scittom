@@ -43,7 +43,7 @@ hr {
     padding-top:75px;
     padding-bottom:75px;
     text-align:center;
-    font-size:55px;
+    font-size:65px;
     font-family:Tahoma;
 }
 .nadpisy{
@@ -90,28 +90,24 @@ hr {
     right: 0;
     z-index: 100;
     background-color:#E5E3E4;
-    width:max;
 }
+
 .show-on-hover {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out;
   }
-  .navbar-brand {
-    margin-right: auto; /* Pushes the logo to the left */
-}
-.nav-item {
-    text-align: center; /* Centers the nav items */
-}
+
 /* Add this style section to your CSS file */
 .navbar-nav .nav-link {
     color: #000;  /* Set your base color here */
-    transition: color 0.3s ease-in-out;  /* Smooth color change on hover */
+    transition: color 0.2s ease-in-out;  /* Smooth color change on hover */
   }
 
   .navbar-nav .nav-link:hover {
     color: #04633F;   /* Replace with your preferred hover color */
   }
+
   .nav-link:visited,
 .nav-link:link {
   border-bottom: 2px solid transparent;
@@ -243,8 +239,8 @@ hr {
     font-family:Tahoma;
 }
 .container{
-    padding-top:15px;
-    padding-bottom:25px;
+    padding-top:10px;
+    padding-bottom:15px;
     padding-left:10px;
     padding-right:10px;
 }
